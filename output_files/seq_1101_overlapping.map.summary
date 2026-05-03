@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun May  3 10:04:30 2026
+Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+Revision Name : seq_1101_overlapping
+Top-level Entity Name : top_seq_1101_overlapping
+Family : Cyclone IV E
+Total logic elements : 64
+    Total combinational functions : 64
+    Dedicated logic registers : 38
+Total registers : 38
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,8 @@
+
+State Machine - |top_seq_1101_overlapping|seq_1101_overlapping:seq_1101_overlapping_inst|pre
+Name pre.S3 pre.S2 pre.S1 pre.S0 pre.S4 
+pre.S0 0 0 0 0 0 
+pre.S1 0 0 1 1 0 
+pre.S2 0 1 0 1 0 
+pre.S3 1 0 0 1 0 
+pre.S4 0 0 0 1 1 

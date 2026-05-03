@@ -1,0 +1,36 @@
+// top level design for sequence 1101
+module top_seq_1101_overlapping(out,clk_led,in,clk_in,rst_n,leds);
+    // ports
+    input in;
+    input clk_in;
+    input rst_n;
+    output out;
+    output clk_led;
+    output [0:6] leds; 
+    // nets
+    wire clk_w;
+	 wire [2:0] state_w;
+
+    // clock divider instance
+    clk_div #(.period(3)) clk_div_inst(
+        .clk_out (clk_w),
+        .clk_led (clk_led),
+        .clk_in  (clk_in)
+    );
+
+    // seq_1101 instance
+    seq_1101_overlapping seq_1101_overlapping_inst(
+        .out   (out),
+        .state (state_w),
+        .in    (in),
+        .clk   (clk_w),
+        .rst_n (rst_n)
+    );
+
+    // bcd_7seg instance
+    bcd_7seg bcd_7seg_inst(
+        .leds (leds),
+        .bcd  ({1'b0, state_w})
+    );
+
+endmodule
