@@ -3,9 +3,10 @@
 ==============================================
 Description:
  This module take 50Mhz clock input and divide
- it to lower frequency. By default, it 
+ it down to a lower frequency. By default, it 
  divides a 50MHz input clock down to 1s clock 
- in which sends an output signal every 25,000,000
+ period toggling the outputs every 25,000,000 
+ ticks.
 
 Design Engineer:
  Caro, Mark Denzen P.
@@ -23,11 +24,11 @@ module clk_div(clk_out,clk_led,clk_in);
  output reg clk_led = 1'b0;
 
  // 3s clock @50MHz
- parameter integer  freq   = 50_000_000;       
- parameter integer  period = 1;                
- localparam integer ticks  = (freq*period)/2;  
- integer tick_cnt = 0;                         
- // reg [27:0] tick_cnt = 28'b0;               
+ parameter integer  freq   = 50_000_000;       // 50MHz default
+ parameter integer  period = 1;                // Time interval (1 second)
+ localparam integer ticks  = (freq*period)/2;  // Number of ticks per period
+ integer tick_cnt = 0;                         // Count Generator
+ // reg [27:0] tick_cnt = 28'b0;               // count 0..149,999,999
  
  always@(posedge clk_in) begin
     if(tick_cnt == freq-1) begin 

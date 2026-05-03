@@ -1,5 +1,5 @@
 Analysis & Synthesis report for seq_1101_overlapping
-Sun May  3 10:04:30 2026
+Sun May  3 23:31:11 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -47,7 +47,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May  3 10:04:30 2026           ;
+; Analysis & Synthesis Status        ; Successful - Sun May  3 23:31:11 2026           ;
 ; Quartus Prime Version              ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                      ; seq_1101_overlapping                            ;
 ; Top-level Entity Name              ; top_seq_1101_overlapping                        ;
@@ -294,18 +294,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cycloneiii_ff         ; 38                          ;
 ;     CLR               ; 5                           ;
 ;     plain             ; 33                          ;
-; cycloneiii_lcell_comb ; 66                          ;
+; cycloneiii_lcell_comb ; 68                          ;
 ;     arith             ; 31                          ;
 ;         2 data inputs ; 31                          ;
-;     normal            ; 35                          ;
+;     normal            ; 37                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
+;         1 data inputs ; 4                           ;
 ;         2 data inputs ; 4                           ;
 ;         3 data inputs ; 17                          ;
 ;         4 data inputs ; 11                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 3.18                        ;
+; Average LUT depth     ; 3.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -324,14 +324,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Sun May  3 10:04:22 2026
+    Info: Processing started: Sun May  3 23:31:02 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off seq_1101_overlapping -c seq_1101_overlapping
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file top_seq_1101.v
     Info (12023): Found entity 1: top_seq_1101_overlapping File: C:/Users/Mark/Documents/Assembly Exam/top_seq_1101.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file clk_div.v
-    Info (12023): Found entity 1: clk_div File: C:/Users/Mark/Documents/Assembly Exam/clk_div.v Line: 20
+    Info (12023): Found entity 1: clk_div File: C:/Users/Mark/Documents/Assembly Exam/clk_div.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file bcd_7seg.v
     Info (12023): Found entity 1: bcd_7seg File: C:/Users/Mark/Documents/Assembly Exam/bcd_7seg.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file testbench.v
@@ -343,7 +343,7 @@ Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:clk_div_inst" 
 Info (12128): Elaborating entity "seq_1101_overlapping" for hierarchy "seq_1101_overlapping:seq_1101_overlapping_inst" File: C:/Users/Mark/Documents/Assembly Exam/top_seq_1101.v Line: 28
 Info (12128): Elaborating entity "bcd_7seg" for hierarchy "bcd_7seg:bcd_7seg_inst" File: C:/Users/Mark/Documents/Assembly Exam/top_seq_1101.v Line: 34
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "leds[1]" is stuck at GND File: C:/Users/Mark/Documents/Assembly Exam/top_seq_1101.v Line: 9
+    Warning (13410): Pin "leds[1]" is stuck at VCC File: C:/Users/Mark/Documents/Assembly Exam/top_seq_1101.v Line: 9
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -353,9 +353,9 @@ Info (21057): Implemented 76 device resources after synthesis - the final resour
     Info (21059): Implemented 9 output pins
     Info (21061): Implemented 64 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4786 megabytes
-    Info: Processing ended: Sun May  3 10:04:30 2026
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 4782 megabytes
+    Info: Processing ended: Sun May  3 23:31:11 2026
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:21
 
 

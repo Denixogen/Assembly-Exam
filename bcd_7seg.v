@@ -22,18 +22,18 @@ module bcd_7seg(leds,bcd);
   output reg [0:6] leds;
 
   always @ (bcd) begin
-    case (bcd)        // abcdefg
-      4'd0:    leds = 7'b1111110 ^ 7'b1111111;
-      4'd1:    leds = 7'b0110000 ^ 7'b1111111;
-      4'd2:    leds = 7'b1101101 ^ 7'b1111111;
-      4'd3:    leds = 7'b1111001 ^ 7'b1111111;
-      4'd4:    leds = 7'b0110011 ^ 7'b1111111;
-      4'd5:    leds = 7'b1011011 ^ 7'b1111111;
-      4'd6:    leds = 7'b0011111 ^ 7'b1111111;
-      4'd7:    leds = 7'b1110000 ^ 7'b1111111;
-      4'd8:    leds = 7'b1111111 ^ 7'b1111111;
-      4'd9:    leds = 7'b1110011 ^ 7'b1111111;
-      default: leds = 7'b0000001 ^ 7'b1111111;
+    case (bcd)
+      4'd0:    leds = 7'b1111110;
+      4'd1:    leds = 7'b0110000;
+      4'd2:    leds = 7'b1101101;
+      4'd3:    leds = 7'b1111001;
+      4'd4:    leds = 7'b0110011;
+      4'd5:    leds = 7'b1011011;
+      4'd6:    leds = 7'b0011111;
+      4'd7:    leds = 7'b1110000;
+      4'd8:    leds = 7'b1111111;
+      4'd9:    leds = 7'b1110011;
+      default: leds = 7'b0000001;
     endcase
   end
 
